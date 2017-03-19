@@ -1,0 +1,83 @@
+#mal_control_strip {
+    background-color: rgba(30, 10, 255, 0.8) !important;
+    background-image: url("http://i.imgur.com/NWqnO.png") !important;
+    background-size: 100% 100% !important;
+z-index: 10 !important;
+position: fixed !important;
+}
+#mal_control_strip td {
+    height: 24px !important;
+}
+#mal_control_strip div {
+    display: inline;
+}
+#mal_cs_pic img {
+    height: 24px !important;
+    width: auto !important;
+}
+#mal_cs_listinfo {
+    width: auto !important;
+}
+#mal_cs_listinfo div:first-of-type:before {
+    content: "Logged in as ";
+}
+#mal_cs_listinfo div:last-of-type a {
+    text-decoration: none;
+}
+#mal_cs_listinfo div:last-of-type a:hover {
+    text-decoration: underline;
+}
+#mal_cs_listinfo div:last-of-type:before {
+}
+#mal_cs_listinfo div:last-of-type:after {
+    content: ")";
+    font-weight: normal;
+}
+#mal_cs_links {
+    padding-top: 2px !important;
+    width: 90px !important;
+}
+#mal_cs_links a {
+    background-image: url("http://i39.tinypic.com/ekg6t5.png") !important;
+    color: transparent !important;
+    content: none;
+    display: inline-block !important;
+    height: 16px;
+    letter-spacing: -5px;
+    width: 16px;
+}
+#mal_cs_links div:first-of-type a:first-of-type {
+    background-position: 0 0 !important;
+}
+#mal_cs_links div:first-of-type a:last-of-type {
+    background-position: -16px 0 !important;
+}
+#mal_cs_links div:last-of-type a:first-of-type {
+    background-position: -32px 0 !important;
+}
+#mal_cs_links div:last-of-type a:last-of-type {
+    background-position: -48px 0 !important;
+}
+#mal_cs_links div:first-of-type:after {
+    content: " ";
+}
+#mal_cs_otherlinks strong:before {
+    content: "[";
+}
+#mal_cs_otherlinks strong:after {
+    content: "]";
+}
+#mal_cs_otherlinks div:last-of-type {
+    float: right;
+    padding-right: 150px;
+}
+#mal_cs_otherlinks div:first-of-type {
+    float: left;
+}
+#mal_cs_powered img {
+    display: none;
+}
+#searchBox {
+    margin-top: -2px !important;
+    width: 135px !important;
+}

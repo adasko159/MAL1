@@ -1,0 +1,158 @@
+
+#mal_control_strip {
+    background: url("http://dl.dropbox.com/u/78192465/MyAnimeList/Index/Images/bg.png") repeat scroll left top transparent !important;
+    border-right: 1px dotted #FFFFFF;
+    border-top: 1px dotted #FFFFFF;
+    border-top-right-radius: 5em;
+    bottom: 0 !important;
+    display: block !important;
+    height: 32px !important;
+    left: 0;
+    position: fixed !important;
+    width: 358px !important;
+    z-index: 10;
+}
+#mal_control_strip a {
+    text-decoration: none !important;
+}
+#mal_control_strip a:hover {
+    text-decoration: underline !important;
+    text-shadow: 0 0 0.2em #197DE5, 0 0 0.2em #197DE5 !important;
+}
+#mal_control_strip, #mal_control_strip a, #mal_control_strip td, #mal_control_strip td div, #mal_control_strip a {
+    color: #FFFFFF !important;
+    font-family: 'Uncial Antiqua',cursive !important;
+    font-size: 14px !important;
+}
+#mal_control_strip img, #mal_cs_powered, #mal_cs_powered img, #mal_cs_pic img, #mal_cs_otherlinks strong, #search, #search, #mal_cs_otherlinks div a[href*="sharedanime"], #mal_cs_otherlinks div span[title*="Compatibility Score"] {
+    display: none !important;
+}
+#mal_cs_powered {
+    height: 0 !important;
+    width: 0 !important;
+}
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links {
+    border-right: medium none !important;
+}
+#mal_cs_listinfo {
+    bottom: 6px !important;
+    height: 34px !important;
+    left: 0 !important;
+    position: absolute !important;
+    width: auto !important;
+    z-index: 25;
+}
+#mal_cs_listinfo div {
+    display: inline-block !important;
+    margin: 0 !important;
+}
+#mal_cs_listinfo div a {
+    position: relative !important;
+}
+#mal_cs_listinfo strong a {
+    font-weight: normal !important;
+    letter-spacing: -12px;
+    visibility: hidden;
+}
+#mal_cs_listinfo strong a:after {
+    border-right: 2px solid #FFFFFF;
+    content: "Profile";
+    letter-spacing: 0 !important;
+    padding-right: 6px;
+    visibility: visible;
+}
+#mal_cs_links {
+    bottom: 6px !important;
+    height: 18px !important;
+    left: 59px !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    z-index: 25;
+}
+#mal_cs_links div {
+    display: inline !important;
+    white-space: nowrap !important;
+}
+#mal_cs_links div a {
+    border-right: 2px solid #FFFFFF;
+    line-height: 18px !important;
+    padding-right: 6px;
+    position: relative !important;
+}
+#mal_cs_links div a[href$="http://myanimelist.net"] {
+    margin-left: -10px;
+}
+#mal_cs_links div a[href*="addtolist"], #mal_cs_links div a[href*="/animelist/"], #mal_cs_links div a[href*="/mangalist/"] {
+    letter-spacing: -12px;
+    visibility: hidden;
+}
+#mal_cs_links div a[href*="addtolist"]:after, #mal_cs_links div a[href*="/animelist/"]:after, #mal_cs_links div a[href*="/mangalist/"]:after {
+    border-right: 2px solid #FFFFFF;
+    letter-spacing: 0 !important;
+    padding-right: 6px;
+    visibility: visible;
+}
+#mal_cs_links div a[href*="addtolist"]:after {
+    content: "Add";
+}
+#mal_cs_links div a[href*="/animelist/"]:after {
+    content: "Anime";
+}
+#mal_cs_links div a[href*="/mangalist/"]:after {
+    border-right: medium none;
+    content: "Manga";
+    margin-left: -10px;
+    padding-right: 0;
+}
+#mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #mal_cs_otherlinks div a[href*="mangalist"] {
+    display: none !important;
+}
+#mal_cs_otherlinks {
+    bottom: 6px !important;
+    height: 18px !important;
+    left: 0 !important;
+    position: absolute !important;
+    white-space: nowrap;
+}
+#mal_cs_otherlinks div {
+    display: inline-block !important;
+    margin: 0 !important;
+}
+#mal_cs_otherlinks div:nth-child(2) {
+    color: transparent !important;
+}
+#mal_cs_otherlinks div a {
+    line-height: 18px !important;
+    position: relative !important;
+}
+#mal_cs_otherlinks div a[href*="register"] {
+    border-right: 2px solid #FFFFFF;
+    padding-right: 6px;
+}
+#mal_cs_otherlinks div a[href*="login"], #mal_cs_listinfo div a[href*="logout"] {
+    letter-spacing: -10px;
+    visibility: hidden;
+}
+#mal_cs_otherlinks div a[href*="login"]:before, #mal_cs_listinfo div a[href*="logout"]:before {
+    border-radius: 10em 10em 10em 10em;
+    content: "";
+    height: 16px;
+    margin-top: 2px;
+    position: absolute;
+    visibility: visible !important;
+    width: 16px;
+}
+#mal_cs_otherlinks div a[href*="login"]:before {
+    background-color: #109362;
+    margin-left: 302px;
+}
+#mal_cs_listinfo div a[href*="logout"]:before {
+    background-color: #D6000A;
+    margin-left: 254px;
+}
+#mal_cs_otherlinks div a[href*="login"]:hover:before {
+    box-shadow: 0 0 8px #00FA00;
+}
+#mal_cs_listinfo div a[href*="logout"]:hover:before {
+    box-shadow: 0 0 8px #FA0000;
+}

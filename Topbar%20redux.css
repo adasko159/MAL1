@@ -1,0 +1,42 @@
+/* Setting background to fit reduced size -- for gradients & standart style */
+#mal\_control\_strip{background-size: 100% 100% !important;
+background-image: url(http://i.imgur.com/NWqnO.png) !important;}
+
+/* Reducing total height - it is set on <td> tag. Also switching divs to display nearly as a plain text */
+#mal\_control\_strip td{height: 24px !important}
+#mal\_control\_strip div{display:inline}
+
+/* This one is for MyAnimeList logo visible when not logged in */
+#mal\_cs\_pic img{height: 24px !important; width: auto !important;}
+
+/* 1st cell - adding text & brackets */
+#mal\_cs\_listinfo{width: auto !important}
+
+#mal\_cs\_listinfo div:first-of-type:before{content:'Logged in as '}
+
+#mal\_cs\_listinfo div:last-of-type a{text-decoration: none}
+#mal\_cs\_listinfo div:last-of-type a:hover{text-decoration: underline}
+
+#mal\_cs\_listinfo div:last-of-type:before{font-weight:normal;content:'('}
+#mal\_cs\_listinfo div:last-of-type:after{font-weight:normal;content:')'}
+
+/* 2nd cell - replacing links with images */
+#mal\_cs\_links{padding-top:2px !important;width: 90px !important;}
+#mal\_cs\_links a{background-image: url('http://i39.tinypic.com/ekg6t5.png') !important;width:16px;height:16px;content:none;color: transparent !important; letter-spacing: -5px;display: inline-block !important;}
+#mal\_cs\_links div:first-of-type a:first-of-type{background-position: 0px 0px !important;}
+#mal\_cs\_links div:first-of-type a:last-of-type{background-position: -16px 0px !important;}
+#mal\_cs\_links div:last-of-type a:first-of-type{background-position:-32px 0px !important;}
+#mal\_cs\_links div:last-of-type a:last-of-type{background-position:-48px 0px !important;}
+
+#mal\_cs\_links div:first-of-type:after{content: '\a0';}/* nbsp makes the space between 2 first buttons and 2 last the same as between the first and the second */
+
+/* 3rd cell - adding brackets & positioning misc links to the right */
+#mal\_cs\_otherlinks strong:before{content: '['}
+#mal\_cs\_otherlinks strong:after{content: ']'}
+
+#mal\_cs\_otherlinks div:last-of-type{float:right;padding-right:150px;}
+#mal\_cs\_otherlinks div:first-of-type{float:left;}
+
+/*4th cell - disables powered by & search images, also tweaking search box a little */
+#mal\_cs\_powered img{display:none;}
+#searchBox{margin-top: -2px !important; width: 135px !important;}

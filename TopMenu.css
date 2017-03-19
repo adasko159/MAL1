@@ -1,0 +1,153 @@
+/* Custom font */
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
+#mal\_control_strip {
+	position: fixed;
+	display: block;
+	top: 0;
+	width: 0;
+	background: none !important;
+	z-index: 100;
+}
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+/* Font settings */
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a {   
+	font-family: 'Cutive Mono', serif !important;
+	font-size: 12.5px !important;
+	letter-spacing: -.5px;
+	font-weight: 500 !important;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered, #mal\_cs_pic img,  #mal\_cs_otherlinks div strong,  #search,
+#mal\_cs_otherlinks div a[href*="sharedanime"], #mal\_cs_otherlinks div span { display: none !important; }
+
+#mal\_cs_powered  { width: 0 !important; height: 0 !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; text-shadow: none !important }
+
+#mal\_cs_listinfo, #mal\_cs_links, #mal\_cs_otherlinks { 
+	position: fixed;
+	display: block !important;
+	right: 33px;
+	width: 0 !important;
+	height: 0 !important;
+	padding: 0 !important;
+	text-align: center;
+	border-width: 0 !important;
+	transition: width .5s ease-in-out, height .5s ease-in-out;
+	-o-transition: width .5s ease-in-out, height .5s ease-in-out;
+	-moz-transition: width .5s ease-in-out, height .5s ease-in-out;
+	-webkit-transition: width .5s ease-in-out, height .5s ease-in-out;
+} 
+
+/* Icons effects */
+#mal\_cs_listinfo:before, #mal\_cs_links:before, #mal\_cs_otherlinks:before {
+	position: fixed;
+	display: block !important;
+	content: '';
+	left: 100% !important;
+	margin-left: -34px;
+	width: 32px !important;
+	height: 32px !important;
+	border-style: solid;
+	border-width: 0 0 0 2px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#mal\_cs_otherlinks:before {
+	border-bottom-width: 2px;
+	border-radius: 0 0 0 4px;
+	-o-border-radius: 0 0 0 4px;
+	-moz-border-radius: 0 0 0 4px;
+ 	-webkit-border-radius: 0 0 0 4px;
+}
+
+#mal\_cs_listinfo  { top: 0; }
+
+#mal\_cs_links { top: 32px; }
+
+#mal\_cs_otherlinks { top: 64px; }
+
+#mal\_cs_listinfo:hover, #mal\_cs_links:hover, #mal\_cs_otherlinks:hover { width: 172px !important; height: 172px !important; }
+
+/* Links surround */
+#mal_cs_listinfo div, #mal_cs_links div, #mal_cs_otherlinks div {
+	opacity: 0;
+	margin: 0 !important;
+	line-height: 0 !important;
+	padding-top: 6px !important;
+	transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	overflow: hidden;
+}
+
+#mal\_cs_listinfo:hover div, #mal\_cs_links:hover div, #mal\_cs_otherlinks:hover div { opacity: 1; }
+
+#mal_cs_listinfo div:first-child, #mal_cs_links div:first-child, #mal_cs_otherlinks div:last-child {
+	border-radius: 4px 0 0 0;
+	-o-border-radius: 4px 0 0 0;
+	-moz-border-radius: 4px 0 0 0;
+ 	-webkit-border-radius: 4px 0 0 0;
+}
+
+#mal_cs_otherlinks div:first-child { display: none; }
+
+#mal\_cs_otherlinks div:last-child { padding: 6px 0 10px !important; }
+
+#mal\_cs_listinfo div:last-child, #mal\_cs_links div:last-child { padding: 1px 0 10px !important; }
+
+/* Links settings */
+#mal_cs_listinfo a, #mal\_cs_listinfo strong a:after, #mal_cs_links a, #mal_cs_otherlinks a, #mal\_cs_otherlinks a[href*="register"]:after {
+	display: block;
+	margin: 4px 12px 0;
+	line-height: 18px;
+	border-style: solid;
+	border-width: 1px;
+	background-clip: padding-box;
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+ 	-webkit-border-radius: 3px;
+}
+
+/* Icons images */
+#mal\_cs_listinfo:before { background-image: url('http://dl.dropboxusercontent.com/u/78192465/MyAnimeList/CSS/TopMenu/Images/listinfo.png'); }
+
+#mal\_cs_links:before { background-image: url('http://dl.dropboxusercontent.com/u/78192465/MyAnimeList/CSS/TopMenu/Images/links.png'); }
+
+#mal\_cs_otherlinks:before { background-image: url('http://dl.dropboxusercontent.com/u/78192465/MyAnimeList/CSS/TopMenu/Images/otherlinks.png'); }
+
+/* Icons hover effects */
+#mal\_cs_listinfo:hover:before, #mal\_cs_links:hover:before, #mal_cs_otherlinks:hover:before {
+	width: 34px !important;
+	border-width: 0;
+}
+
+#mal\_cs_pic { border: none !important; }
+
+/* MyAnimeList logo */
+#mal\_cs_pic a {
+	position: fixed;
+	display: block !important;
+	right: 0 !important;
+	top: 0;
+	width: 32px !important;
+	height: 64px !important;
+	border-style: solid;
+	border-width: 0 0 0 2px;
+	background-image: url('http://dl.dropboxusercontent.com/u/78192465/MyAnimeList/CSS/TopMenu/Images/MAL.png') !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* Links custom text*/
+#mal\_cs_listinfo strong a, #mal\_cs_otherlinks div a[href*="register"] { visibility: hidden; display: inline; line-height: 0 !important; letter-spacing: -12px; }
+
+#mal\_cs_listinfo strong a:after { visibility: visible; content: 'My profile'; letter-spacing: 0 !important; }
+
+#mal\_cs_otherlinks div a[href*="register"]:after { visibility: visible; content: 'Create list'; letter-spacing: -.5px !important; }
